@@ -1,0 +1,31 @@
+header {
+  background: linear-gradient(#ffcc00, #ff9900);
+  padding:0.5em;
+  box-shadow: 0px 1px 1px black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: grey;
+  margin: 0;
+}
+
+form {
+  padding-left: 0.5em;
+}
+
+footer {
+  text-align:center;
+}
+
+#bigSmallLogo {
+  width: 49px;
+  height: 47px;
+  vertical-align: middle;
+  display: inline;
+}
+
+#bigTitle {
+  vertical-align: middle;
+  display: inline;
+}
