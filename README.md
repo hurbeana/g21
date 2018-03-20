@@ -3,7 +3,6 @@
 ## Arbeitseinteilung UE1
 
 - Phillip
-	* styles/common.css
 	*	login.html
 	*	styles/login.css
 	*	options.html
@@ -14,3 +13,5 @@
 - Alex
 	* overview.html
 	*	styles/overview.css
+- free for taking
+	* styles/common.css

@@ -1,0 +1,60 @@
+.desktop {
+    /*display: flex;*/
+}
+
+/*#diagram {
+    background-image: url("images/arrows.png");
+}*/
+
+#bg {
+    position: relative;
+    z-index: -1;
+    min-width: 50%;
+}
+
+.diaelement {
+    position: relative;
+    width: 100px;
+}
+
+#item-gen1 {
+    top: 50px;
+    left: 50px;
+}
+
+#machine {
+    top: 50px;
+    left: 200px;
+}
+
+#conveyor {
+    top: 0px;
+    left: 0px;
+}
+
+#end-storage {
+    top: 0px;
+
+}
+
+#end-storage {
+    top: 0px;
+
+}
+
+#end-storage {
+    top: 0px;
+
+}
+
+
+
+#item-gen2 {
+    top: 0px;
+
+}
+
+#trash {
+    top: 0px;
+
+}
