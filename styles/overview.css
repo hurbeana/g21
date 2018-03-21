@@ -34,16 +34,7 @@ body {
     align-items: baseline;
 }
 
-#diagram {
-    background-image: url('../images/arrows.png');
-    height: 548px;
-    /*528px;*/
-    display: grid;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 1px lightgrey;
-    grid-template-columns: repeat(5, 20%)
-}
+
 
 .diaelement {
     position: relative;
@@ -149,13 +140,13 @@ nav li {
 }
 
 a {
-  text-decoration:none;
-  color:white;
-  padding:0.8em;
-  margin:0em;
-  border: 1px solid #27548a;
-  border-radius:5px;
-  background: linear-gradient(#1983af, #27548a);
+    text-decoration: none;
+    color: white;
+    padding: 0.8em;
+    margin: 0em;
+    border: 1px solid #27548a;
+    border-radius: 5px;
+    background: linear-gradient(#1983af, #27548a);
 }
 
 
@@ -213,10 +204,16 @@ footer {
 /* small */
 
 @media screen and (max-width: 767px) {
-    body {
+
+    #menu {
         display: none;
-        /*coming soon TM*/
     }
+
+    aside {
+        display: none;
+    }
+
+
 }
 
 /* medium and big */
@@ -224,6 +221,17 @@ footer {
 @media screen and (min-width: 768px) {
     .small {
         display: none;
+    }
+
+    #diagram {
+        background-image: url('../images/arrows.png');
+        height: 548px;
+        /*528px;*/
+        display: grid;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: solid 1px lightgrey;
+        grid-template-columns: repeat(5, 20%)
     }
 }
 
