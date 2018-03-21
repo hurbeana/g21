@@ -2,59 +2,60 @@
     /*display: flex;*/
 }
 
-/*#diagram {
-    background-image: url("images/arrows.png");
-}*/
-
-#bg {
-    position: relative;
-    z-index: -1;
-    min-width: 50%;
+#diagram {
+    background-image: url('../images/arrows.png');
+    max-width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-gap: 10px;
+    padding: 70px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: solid 1px red;
 }
 
 .diaelement {
     position: relative;
-    width: 100px;
+    max-width: 40%;
 }
 
 #item-gen1 {
-    top: 50px;
-    left: 50px;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 #machine {
-    top: 50px;
-    left: 200px;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#item-gen2 {
+    grid-column: 5;
+    grid-row: 1;
 }
 
 #conveyor {
-    top: 0px;
-    left: 0px;
+    grid-column: 2;
+    grid-row: 2;
 }
 
-#end-storage {
-    top: 0px;
-
-}
-
-#end-storage {
-    top: 0px;
-
-}
-
-#end-storage {
-    top: 0px;
-
-}
-
-
-
-#item-gen2 {
-    top: 0px;
-
+#intelligent {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 #trash {
-    top: 0px;
+    grid-column: 4;
+    grid-row: 2;
 
+}
+
+#interim {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#end-storage {
+    grid-column: 5;
+    grid-row: 3;
 }
