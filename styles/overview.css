@@ -1,13 +1,12 @@
 .flex {
     display: flex;
     align-items: center;
-    align-content: center;
     justify-content: center;
 }
 
 html,
 body {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -16,33 +15,29 @@ body {
 }
 
 #main {
-    /*float: left;*/
-    /*width: 60%;*/
     padding: 10px;
     border: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 723px;
 }
 
-/*
-#main, aside {
-    flex-grow: 1;
-}*/
-
-#produktionskette {}
-
-#produktionskette > h2 {
-    float: left;
+.prodwidth {
+    width: inherit;
+    /*697px;*/
 }
 
-#produktionskette > p {
-    float: right;
+#produktionskette {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 #diagram {
     background-image: url('../images/arrows.png');
     height: 548px;
     /*528px;*/
-    width: 723px;
-    /*697px;*/
     display: grid;
     background-repeat: no-repeat;
     background-size: contain;
@@ -111,21 +106,30 @@ body {
 
 
 #menu {
-    display: flex;
-    flex-wrap: wrap;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
 }
 
 .komponenten {
-    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.komponenten > h3 {
-    margin: 0em 0em 0em 0em;
+.komponenten h3 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bolder;
 }
-.komponenten > p {
+
+.komponenten p {
     margin: 0em 0em 0.5em 0em;
-}
+    font-size: 0.7em;
+    font-weight: bold;
 
+}
 
 
 aside {
@@ -156,6 +160,11 @@ footer {
     text-decoration-style: dotted;
 }
 
+.smallgreybold {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #888888;
+}
 
 
 
