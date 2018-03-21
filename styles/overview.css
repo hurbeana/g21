@@ -131,11 +131,16 @@ body {
 
 }
 
+.komponenten a {
+    font-size: 15px;
+}
+
+
 nav ul {
     display: inline-block;
     position: absolute;
-    right: 0.5em;
-    top: 0.2em;
+    right: 0.75em;
+    top: 0.75em;
 }
 
 nav li {
@@ -143,14 +148,14 @@ nav li {
     display: inline-block;
 }
 
-nav li a {
+a {
   text-decoration:none;
   color:white;
-  padding:0.5em;
-  margin:0.5em;
-  border: 1px solid black;
+  padding:0.8em;
+  margin:0em;
+  border: 1px solid #27548a;
   border-radius:5px;
-  background: orange;
+  background: linear-gradient(#1983af, #27548a);
 }
 
 
@@ -211,6 +216,14 @@ footer {
     body {
         display: none;
         /*coming soon TM*/
+    }
+}
+
+/* medium and big */
+
+@media screen and (min-width: 768px) {
+    .small {
+        display: none;
     }
 }
 
