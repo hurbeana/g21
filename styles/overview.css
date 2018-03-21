@@ -115,18 +115,20 @@ body {
 .komponenten {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
-.komponenten > h3 {
+.komponenten h3 {
     margin: 0;
     font-size: 1em;
     font-weight: bolder;
 }
 
-.komponenten > p {
+.komponenten p {
     margin: 0em 0em 0.5em 0em;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: bold;
+
 }
 
 
