@@ -8,6 +8,20 @@
 #main {
     /*float: left;*/
     /*width: 60%;*/
+    padding: 10px;
+    border: 0px;
+}
+
+#produktionskette {
+
+}
+
+#produktionskette > h2 {
+    float: left;
+}
+
+#produktionskette > p {
+    float: left;
 }
 
 #diagram {
@@ -69,48 +83,67 @@
 }
 
 
-
+/*
 #main,
 aside,
 footer {
     margin: 20px 1.5% 20px 1.5%;
-}
+}*/
 
 aside {
     /*float: right;*/
     /*width: 30%;*/
+    margin: 10px;
+    border: solid 10px;
 }
 
 
 footer {
     clear: both;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 
 
+
+/* small */
+@media screen and (max-width: 767px) {
+    body {
+        display: none; /*coming soon TM*/
+    }
+}
+
 /* medium */
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
     .flex {
         flex-direction: column-reverse;
     }
+
+    #main {
+        border-top: solid 2px lightgrey;
+    }
+
     h2 {
         color: red;
     }
 }
 
 /* big */
+
 @media screen and (min-width: 1024px) {
+
     .flex {
         flex-direction: row;
     }
+
+    #main {
+        border-right: solid 2px lightgrey;
+    }
+
     h2 {
         color: blue;
     }
 }
-
-/* small
-@media screen and (max-width: 767px) {
-
-}*/
