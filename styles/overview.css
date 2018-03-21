@@ -5,12 +5,26 @@
     justify-content: center;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#f6f7fa, #d3d8e8);
+}
+
 #main {
     /*float: left;*/
     /*width: 60%;*/
     padding: 10px;
     border: 0px;
 }
+
+/*
+#main, aside {
+    flex-grow: 1;
+}*/
 
 #produktionskette {
 
@@ -21,17 +35,17 @@
 }
 
 #produktionskette > p {
-    float: left;
+    float: right;
 }
 
 #diagram {
     background-image: url('../images/arrows.png');
-    height: 528px;
-    width: 700px;
+    height: 548px; /*528px;*/
+    width: 723px; /*697px;*/
     display: grid;
     background-repeat: no-repeat;
     background-size: contain;
-    border: solid 1px red;
+    border: solid 1px lightgrey;
     grid-template-columns: repeat(5,20%)
 }
 
@@ -114,6 +128,7 @@ footer {
     clear: both;
     text-align: center;
     margin-bottom: 15px;
+    flex-shrink: 0;
 }
 
 
