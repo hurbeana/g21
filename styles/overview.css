@@ -158,7 +158,31 @@ aside {
     /*float: right;*/
     /*width: 30%;*/
     margin: 10px;
-    border: solid 10px;
+}
+
+.verbindung {
+    display: inline-block;
+    height: 3em;
+}
+
+.verbindung .img {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-radius: 1em 0em 0em 1em;
+    height: 100%;
+    float: left;
+    vertical-align: middle;
+}
+
+.verbindung .text {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    border-radius: 0em 1em 1em 0em;
+    background: white;
+    height: 100%;
+    float: right;
 }
 
 
