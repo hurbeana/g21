@@ -5,13 +5,14 @@
     justify-content: center;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(#f6f7fa, #d3d8e8);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#f6f7fa, #d3d8e8);
 }
 
 #main {
@@ -26,9 +27,7 @@ body {
     flex-grow: 1;
 }*/
 
-#produktionskette {
-
-}
+#produktionskette {}
 
 #produktionskette > h2 {
     float: left;
@@ -40,13 +39,15 @@ body {
 
 #diagram {
     background-image: url('../images/arrows.png');
-    height: 548px; /*528px;*/
-    width: 723px; /*697px;*/
+    height: 548px;
+    /*528px;*/
+    width: 723px;
+    /*697px;*/
     display: grid;
     background-repeat: no-repeat;
     background-size: contain;
     border: solid 1px lightgrey;
-    grid-template-columns: repeat(5,20%)
+    grid-template-columns: repeat(5, 20%)
 }
 
 .diaelement {
@@ -109,12 +110,23 @@ body {
 }
 
 
-/*
-#main,
-aside,
-footer {
-    margin: 20px 1.5% 20px 1.5%;
-}*/
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.komponenten {
+    margin: 1em;
+}
+
+.komponenten > h3 {
+    margin: 0em 0em 0em 0em;
+}
+.komponenten > p {
+    margin: 0em 0em 0.5em 0em;
+}
+
+
 
 aside {
     /*float: right;*/
@@ -131,13 +143,19 @@ footer {
     flex-shrink: 0;
 }
 
+#big {
+    text-decoration-style: dotted;
+}
+
 
 
 
 /* small */
+
 @media screen and (max-width: 767px) {
     body {
-        display: none; /*coming soon TM*/
+        display: none;
+        /*coming soon TM*/
     }
 }
 

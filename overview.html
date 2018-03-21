@@ -37,6 +37,58 @@
 
                 <img class="diaelement" id="end-storage" src="images/end_storage.svg">
             </div>
+            <div id="menu">
+                <div id="3ddrucker" class="komponenten">
+                    <h3>3D-Drucker</h3>
+                    <p>(Zustand)</p>
+                    <select name="zustände">
+                        <option value="unfertig">
+                            Unfertig
+                        </option>
+                        <option value="teilweisefertig">
+                            Teilweise Fertig
+                        </option>
+                        <option value="fertig">
+                            Fertig
+                        </option>
+                    </select>
+                </div>
+                <div id="maschine" class="komponenten">
+                    <h3>Maschine</h3>
+                    <p>(Termperatur)</p>
+                    <input id="maschinentemperatur">
+                </div>
+                <div id="temporäreslager" class="komponenten">
+                    <h3>Temporäres Lager</h3>
+                    <p>(Anzahl)</p>
+                    <input id="templageranzahl">
+                </div>
+                <div id="endlager" class="komponenten">
+                    <h3>Endlager</h3>
+                    <p>(Anzahl)</p>
+                    <input id="endlageranzahl">
+                </div>
+                <div id="mülllager" class="komponenten">
+                    <h3>Mülllager</h3>
+                    <p>(Anzahl)</p>
+                    <input id="mülllageranzahl">
+                </div>
+                <div id="förderband" class="komponenten">
+                    <h3>Förderband</h3>
+                    <p>(Ein/Aus)</p>
+                    <input id="förderbandcheck" type="checkbox">
+                </div>
+                <div id="intelligentesförderband" class="komponenten">
+                    <h3>Intelligentes Förderband</h3>
+                    <p>(Ein/Aus)</p>
+                    <input id="intelligentesförderbandcheck" type="checkbox">
+                </div>
+                <div id="aktualisieren">
+                    <button id="geräteaktualisieren">
+                        test
+                    </button>
+                </div>
+            </div>
         </article>
 
         <aside>
@@ -54,7 +106,9 @@
 
     </div>
 
-    <footer>this is the footer element</footer>
+    <footer>
+        <p>&#169 2018 <span id="big"> BIG </span> Smart Production</p>
+    </footer>
 
 </body>
 
