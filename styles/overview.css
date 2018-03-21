@@ -132,7 +132,16 @@ aside {
     /*float: right;*/
     /*width: 30%;*/
     margin: 10px;
-    border: solid 10px;
+}
+
+.verbindung {
+    border: solid 2px;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.verbindung > p {
+    background: white;
 }
 
 
