@@ -1,17 +1,19 @@
 .flex {
     display: flex;
+    align-items: center;
+    align-content: center;
     justify-content: center;
 }
 
 #main {
     /*float: left;*/
-    width: 60%;
+    /*width: 60%;*/
 }
 
 #diagram {
     background-image: url('../images/arrows.png');
     height: 528px;
-    width: 100%;
+    width: 700px;
     display: grid;
     grid-gap: 10px;
     padding: 0px;
@@ -76,7 +78,7 @@ footer {
 
 aside {
     /*float: right;*/
-    width: 30%;
+    /*width: 30%;*/
 }
 
 
