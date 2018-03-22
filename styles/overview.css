@@ -13,7 +13,6 @@ main {
     display: inline-flex;
     align-items: top;
     justify-content: center;
-    border: 0px;
     display: flex;
     flex-direction: column;
 }
@@ -192,10 +191,6 @@ footer {
     margin-bottom: 15px;
     flex-shrink: 0;
 }
-/*
-#big {
-    text-decoration-style: dotted;
-}*/
 
 .smallgreybold {
     font-size: 0.8em;
@@ -203,7 +198,33 @@ footer {
     color: #888888;
 }
 
-
+@media screen and (max-width: 629px) {
+    nav ul:before {
+    content: 'Nav';
+    color: white;
+    padding: 0.8em;
+    border: 1px solid #27548a;
+    border-radius: 5px;
+    background: linear-gradient(#1983af, #27548a);
+    position:absolute;
+  }
+  nav ul{
+    padding:0.1em;
+  }
+  nav ul:hover {
+    background:#e8e8e8;
+    display: block;
+  }
+  nav ul li {
+    display:none;
+    height:2.2em;
+    width:100%;
+  }
+  nav ul:hover li {
+    text-align:center;
+    display: block;
+  }
+}
 
 /* small */
 
@@ -217,10 +238,15 @@ footer {
         display: none;
     }
 
+    article {
+        width: auto;
+    }
+
     article .itemgrid {
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        align-items: baseline;
         flex-direction: row;
         width: 100%;
     }
@@ -231,52 +257,13 @@ footer {
         display: flex;
         width: 15em;
         margin: 0.5em;
+        box-sizing: border-box;
     }
 
     article .item img {
         margin: 0.8em;
         max-height: 4em;
     }
-}
-
-@media screen and (max-width: 629px) {
-    nav ul:before {
-    content: 'Nav';
-    border:1px solid black;
-    background: white;
-    padding:0.5em;
-    position:absolute;
-    right:0.5em;
-    top:calc(-2em - 4px);
-  }
-  nav ul {
-    margin-top:calc(2.5em);
-    padding:0;
-    padding-bottom:0.5em;
-    top: 0.2em;
-    right:0.5em;
-  }
-  nav ul:hover {
-    background:lightblue;
-    border:1px solid black;
-    top: calc(0.2em - 1px);
-    right: calc(0.5em - 1px);
-  }
-  nav ul li {
-    display:none;
-    height:2.2em;
-    width:100%;
-  }
-  nav ul:hover li {
-    text-align:center;
-    display: block;
-  }
-
-  nav ul:hover li a {
-    width:4em;
-    display:block;
- }
-
 }
 
 /* medium and big */
@@ -316,10 +303,6 @@ footer {
         border-top: solid 2px lightgrey;
     }
 
-    h2 {
-        color: red;
-    }
-
     .item {
         box-sizing: border-box;
         max-width: 48%;
@@ -337,9 +320,5 @@ footer {
 
     article {
         border-right: solid 2px lightgrey;
-    }
-
-    h2 {
-        color: blue;
     }
 }
