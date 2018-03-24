@@ -3,19 +3,20 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/common.css" />
+  <link rel="stylesheet" href="styles/login.css" />
 </head>
 
 <body>
   <header>
-    <img src="images/big-logo-small.png" alt="BIG Smart Production" id="bigSmallLogo">
-    <h1 id="bigTitle">BIG Smart Production</h1>
+    <img id="logo" src="images/big-logo-small.png" alt="BIG Smart Production">
+    <h1 class="headerTitle">BIG Smart Production</h1>
   </header>
   <main>
-    <form>
+    <form action="overview.html">
       <h2>Anmelden</h2>
-      <p><label for="uname">Benutzername: </label><input id="uname" type="text"></p>
-      <p><label for="password">Passwort: </label><input id="password" type="password" required=""></p>
+      <p><label for="uname">Benutzername: </label><input id="uname" placeholder="Benutzername" type="text" pattern="^\S*"required></p>
+      <p><label for="password">Passwort: </label><input id="password" placeholder="Passwort" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
       <p> <button type="submit">Anmelden</button> </p>
     </form>
   </main>
