@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Options</title>
+  <link rel="stylesheet" href="styles/common.css" />
+  <link rel="stylesheet" href="styles/options.css" />
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="images/big-logo-small.png" alt="BIG Smart Production">
+    <h1 class="headerTitle">BIG Smart Production</h1>
+  </header>
+  <nav>
+      <ul class="target">
+        <ul class="menue">
+          <li>
+            <a id="overview" href="overview.html">Übersicht</a>
+          </li>
+          <li>
+            <a id="abmelden" href="login.html">Abmelden</a>
+          </li>
+        </ul>
+      </ul>
+  </nav>
+  <main>
+    <form action="overview.html">
+      <h2>Passwort ändern</h2>
+      <p><label for="oldPw">Altes Passwort: </label><input id="oldPw" placeholder="Altes Passwort" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
+      <p><label for="newPw">Neues Passwort: </label><input id="newPw" placeholder="Neues Passwort" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
+      <p><label for="repeatPw">Passwort wiederholen: </label><input id="repeatPw" placeholder="Neues Passwort wiederholen" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
+      <p><button type="submit">Änderung speichern</button></p>
+    </form>
+  </main>
+  <footer>@2018 BIG Smart Production</footer>
+</body>
+</html>
