@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <a class="skip-main" href="#main">Skip to main content</a>
   <header>
     <img id="logo" src="images/big-logo-small.png" alt="BIG Smart Production">
     <h1 class="headerTitle">BIG Smart Production</h1>
@@ -24,7 +25,7 @@
         </ul>
       </ul>
   </nav>
-  <main>
+  <main id="main" tabindex="-1">
     <form action="overview.html">
       <h2>Passwort ändern</h2>
       <p><label for="oldPw">Altes Passwort: </label><input id="oldPw" placeholder="Altes Passwort" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
