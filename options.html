@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Options</title>
-  <link rel="stylesheet" href="styles/common.css" />
-  <link rel="stylesheet" href="styles/options.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/options.css" />
 </head>
 
 <body>
-  <a class="skip-main" href="#main">Skip to main content</a>
-  <header>
-    <img id="logo" src="images/big-logo-small.png" alt="BIG Smart Production">
-    <h1 class="headerTitle">BIG Smart Production</h1>
-  </header>
-  <nav>
-      <ul class="target">
-        <ul class="menue">
-          <li>
-            <a id="overview" href="overview.html">Übersicht</a>
-          </li>
-          <li>
-            <a id="abmelden" href="login.html">Abmelden</a>
-          </li>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <header>
+        <img id="logo" src="images/big-logo-small.png" alt="BIG Smart Production">
+        <h1 class="headerTitle">BIG Smart Production</h1>
+    </header>
+    <nav>
+        <ul class="target">
+            <ul class="menue">
+                <li>
+                    <a id="overview" href="overview.html">Übersicht</a>
+                </li>
+                <li>
+                    <a id="abmelden" href="login.html">Abmelden</a>
+                </li>
+            </ul>
         </ul>
-      </ul>
-  </nav>
-  <main id="main" tabindex="-1">
-    <form action="overview.html">
-      <h2>Passwort ändern</h2>
-      <p><label for="oldPw">Altes Passwort: </label><input id="oldPw" placeholder="Altes Passwort" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
-      <p><label for="newPw">Neues Passwort: </label><input id="newPw" placeholder="Neues Passwort" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
-      <p><label for="repeatPw">Passwort wiederholen: </label><input id="repeatPw" placeholder="Neues Passwort wiederholen" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
-      <p><button type="submit">Änderung speichern</button></p>
-    </form>
-  </main>
+    </nav>
+    <main id="main" tabindex="-1">
+        <form action="overview.html">
+            <h2>Passwort ändern</h2>
+            <p><label for="oldPw">Altes Passwort: </label><input id="oldPw" placeholder="Altes Passwort" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
+            <p><label for="newPw">Neues Passwort: </label><input id="newPw" placeholder="Neues Passwort" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
+            <p><label for="repeatPw">Passwort wiederholen: </label><input id="repeatPw" placeholder="Neues Passwort wiederholen" type="password" pattern="(?=^.{8,12}$)(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])\S*$" required></p>
+            <p><button type="submit">Änderung speichern</button></p>
+        </form>
+    </main>
     <footer>
-      <p>&#169; 2018 <span id="big">BIG</span> Smart Production</p>
+        <p>&#169; 2018 <span id="big">BIG</span> Smart Production</p>
     </footer>
 </body>
 </html>
