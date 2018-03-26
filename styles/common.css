@@ -17,6 +17,10 @@ body {
     background: linear-gradient(#f6f7fa, #d3d8e8);
 }
 
+html, body {
+    min-height: 100%;
+}
+
 footer {
     clear: both;
     text-align: center;
