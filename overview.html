@@ -15,7 +15,7 @@
         <img id="logo" alt="Big Smart Productions Logo" src="images/big-logo-small.png">
         <h1>BIG Smart Production</h1>
         <nav>
-      <ul class="target">
+      <div class="target">
         <ul class="menue">
           <li>
             <a id="overview" href="options.html">Optionen</a>
@@ -24,7 +24,7 @@
             <a id="abmelden" href="login.html">Abmelden</a>
           </li>
         </ul>
-      </ul>
+      </div>
   </nav>
     </header>
     <main id="main" tabindex="-1">
@@ -113,7 +113,7 @@
                         <label for="zustand">3D-Drucker</label>
                         <p>(Zustand)</p>
                     </div>
-                    <select name="zustand">
+                    <select name="zustand" title="zustand">
                         <option value="unfertig">
                             Unfertig
                         </option>
@@ -130,28 +130,28 @@
                         <label for="temp">Maschine</label>
                         <p>(Temperatur)</p>
                     </div>
-                    <input name="temp" id="maschinentemperatur">
+                    <input name="temp" title="maschinentemperatur" id="maschinentemperatur">
                 </div>
                 <div id="temporäreslager" class="komponenten">
                     <div>
                         <label for="templageraz">Temporäres Lager</label>
                         <p>(Anzahl)</p>
                     </div>
-                    <input name="templageraz" id="templageranzahl">
+                    <input name="templageraz" title="temporäre Lageranzahl" id="templageranzahl">
                 </div>
                 <div id="endlager" class="komponenten">
                     <div>
                         <label for="endlageraz">Endlager</label>
                         <p>(Anzahl)</p>
                     </div>
-                    <input name="templageraz" id="endlageranzahl">
+                    <input name="endlageraz" title="Endlageranzahl" id="endlageranzahl">
                 </div>
                 <div id="mülllager" class="komponenten">
                     <div>
                         <label for="muelllageraz">Mülllager</label>
                         <p>(Anzahl)</p>
                     </div>
-                    <input name="muelllageraz" id="mülllageranzahl">
+                    <input name="muelllageraz" title="Mülllageranzahl" id="mülllageranzahl">
                 </div>
                 <div id="förderband" class="komponenten">
                     <div>

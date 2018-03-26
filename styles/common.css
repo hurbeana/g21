@@ -116,7 +116,6 @@ a {
         border-radius: 5px;
         background: linear-gradient(#1983af, #27548a);
         text-align: center;
-
         position: absolute;
         right: 0.6em;
         top: -3em;
@@ -128,7 +127,7 @@ a {
         background: white;
         border-radius: 5px;
         display: inline-block;
-        margin: -1.33em 0.55em 0em 0em;
+        margin: -0.4em 0.55em 0em 0em;
         padding: 0em;
     }
 
