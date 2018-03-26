@@ -25,21 +25,14 @@ a.skip-main:focus, a.skip-main:active {
     z-index:999;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-
 form {
   padding-left: 25%;
   padding-right: 25%;
   width: 50%;
 }
 
-h2 {
-  font-size: 1.3em;
-}
 
-p {
+main p {
   text-align: left;
   width:100%;
   margin-bottom: 2em;
@@ -127,25 +120,4 @@ form:valid button {
       margin-left: 2.5%;
       margin-right: 2.5%;
     }
-}
-
-/* commmon.cs */
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(white,#C0C0C0);
-  margin: 0;
-  height: 100%;
-}
-
-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  margin: 0.5em;
-}
-
-html {
-  height: 100%;
 }
