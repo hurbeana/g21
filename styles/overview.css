@@ -44,11 +44,11 @@ article {
     margin: 0em 0em 0.5em 0em;
     font-size: 0.7em;
     font-weight: bold;
-
 }
 
-.komponenten a {
-    font-size: 15px;
+#aktualisieren {
+    align-items: flex-end;
+    align-self: flex-end;
 }
 
 aside {
