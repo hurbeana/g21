@@ -12,7 +12,7 @@
 <body>
     <a class="skip-main" href="#main">Skip to main content</a>
     <header>
-        <img id="logo" src="images/big-logo-small.png">
+        <img id="logo" alt="Big Smart Productions Logo" src="images/big-logo-small.png">
         <h1>BIG Smart Production</h1>
         <nav>
       <ul class="target">
@@ -110,10 +110,10 @@
             <div id="menu">
                 <div id="3ddrucker" class="komponenten">
                     <div>
-                        <h3>3D-Drucker</h3>
+                        <label for="zustand">3D-Drucker</label>
                         <p>(Zustand)</p>
                     </div>
-                    <select name="zustände">
+                    <select name="zustand">
                         <option value="unfertig">
                             Unfertig
                         </option>
@@ -127,45 +127,45 @@
                 </div>
                 <div id="maschine" class="komponenten">
                     <div>
-                        <h3>Maschine</h3>
-                        <p>(Termperatur)</p>
+                        <label for="temp">Maschine</label>
+                        <p>(Temperatur)</p>
                     </div>
-                    <input id="maschinentemperatur">
+                    <input name="temp" id="maschinentemperatur">
                 </div>
                 <div id="temporäreslager" class="komponenten">
                     <div>
-                        <h3>Temporäres Lager</h3>
+                        <label for="templageraz">Temporäres Lager</label>
                         <p>(Anzahl)</p>
                     </div>
-                    <input id="templageranzahl">
+                    <input name="templageraz" id="templageranzahl">
                 </div>
                 <div id="endlager" class="komponenten">
                     <div>
-                        <h3>Endlager</h3>
+                        <label for="endlageraz">Endlager</label>
                         <p>(Anzahl)</p>
                     </div>
-                    <input id="endlageranzahl">
+                    <input name="templageraz" id="endlageranzahl">
                 </div>
                 <div id="mülllager" class="komponenten">
                     <div>
-                        <h3>Mülllager</h3>
+                        <label for="muelllageraz">Mülllager</label>
                         <p>(Anzahl)</p>
                     </div>
-                    <input id="mülllageranzahl">
+                    <input name="muelllageraz" id="mülllageranzahl">
                 </div>
                 <div id="förderband" class="komponenten">
                     <div>
-                        <h3>Förderband</h3>
+                        <label for="forderbandanaus">Förderband</label>
                         <p>(Ein/Aus)</p>
                     </div>
-                    <input id="förderbandcheck" type="checkbox">
+                    <input name="forderbandanaus" title="Förderband An Aus" id="förderbandcheck" type="checkbox">
                 </div>
                 <div id="intelligentesförderband" class="komponenten">
                     <div>
-                        <h3>Intelligentes Förderband</h3>
+                        <label for="intfoerderbandanaus">Intelligentes Förderband</label>
                         <p>(Ein/Aus)</p>
                     </div>
-                    <input id="intelligentesförderbandcheck" type="checkbox">
+                    <input name="intfoerderbandanaus" title="Intelligentes Förderband An Aus" id="intelligentesförderbandcheck" type="checkbox">
                 </div>
                 <div id="aktualisieren" class="komponenten">
                     <a href="">Geräte Aktualisieren</a>

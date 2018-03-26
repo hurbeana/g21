@@ -37,12 +37,16 @@ article {
 .komponenten {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.komponenten h3 {
+.komponenten div {
+    padding-bottom: 1em;
+}
+
+.komponenten label {
     margin: 0;
-    font-size: 1em;
+    font-size: 1.17em;
     font-weight: bolder;
 }
 
