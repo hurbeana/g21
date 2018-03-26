@@ -183,6 +183,7 @@ aside .item img {
         width: 6.1em;
         justify-self: center;
         align-self: center;
+        cursor: move;
     }
 
     #item-gen1 {
